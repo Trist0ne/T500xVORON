@@ -138,7 +138,7 @@ Thankfully for the most part we are SIMPLIFYING the wiring rather than making it
 3. Thread the CANBUS cable from the toolhead port through the X axis drag chain, following the same path the stock umbilical cable did into the electronics bay. Use the same anchor points to attach the cable to the edge of the X axis and the bottom of the Z axis
 * LEAVE SOME ROOM FOR SLACK. While you want these cables managed nicely, you dont want them routed so tightly that they're damaging the things they're attached to, or the internal wiring. Dont attach it so tightly that the Z axis rips the cable out at max height!
 * Route the cable cleanly through the electronics bay to the U2C. Plug it in, then zip tie up the rest of the slack to one of the stock anchor points.
-* Zip tie the CANBUS cable to the X axis stepper to keep everything clean and organized
+* Zip tie the CANBUS cable to the X axis stepper wire to keep everything clean and organized
 
 #### Wiring Checks
 Dont think, just double check them
