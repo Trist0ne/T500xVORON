@@ -137,11 +137,37 @@ When you're 100% sure everything is lined up, plug your printer in and flip the 
 
 ### Software Configuration
 
-1. Access your printers web-ui. In the machine tab, delete ALL the config files.
-2. Download the Klipper Configurations folder from this Github ([here](https://github.com/Trist0ne/T500xVORON/tree/main/Klipper%20Configurations)), and upload them ALL to the printer's config section.
+#### Initial Startup
+1. Install KAMP on your printer, located [here](https://github.com/kyleisah/Klipper-Adaptive-Meshing-Purging)
+2. Access your printers web-ui. In the machine tab, delete ALL the config files.
+3. Download the Klipper Configurations folder from this Github ([here](https://github.com/Trist0ne/T500xVORON/tree/main/Klipper%20Configurations)), and upload them ALL to the printer's config section.
 * ![image](https://github.com/Trist0ne/T500xVORON/assets/41755299/258b8037-95a2-4bea-b8ea-d8ef3a9e6b04)
-3. 
+3. Configure the annotated sections of **toolboard.cfg** and **u2c.cfg**. You will need to fill in the canbus_uuid sections to to tell your printer the CAN addresses of your U2C and SB2209
+4. Save and click 'firmware restart'; resolve any errors that Klipper may throw, if any (it will tell you what the issue is).
 
-   
+#### Z Endstop Check
+DO THIS BEFORE ATTEMPTING TO HOME THE PRINTER
+1. Once Klipper has successfully loaded and can interface with the U2C and SB2209, navigate to the machine page of the web UI and press 'sync endstops'
+2. Endstop Z should be 'OPEN'
+3. By hand, move the toolhead up to the top of it's travel to trigger the CNC TAP sensor. Hold it in place and click the 'sync enstops' button. Endstop Z should now be marked as 'CLOSED'
+
+#### Sensorless Homing Configuration
+DO THIS BEFORE ATTEMPTING TO HOME THE PRINTER
+1. Follow the guide located [here](https://docs.vorondesign.com/community/howto/clee/sensorless_xy_homing.html) to calibrate the sensorless homing.
+* The default configurations are made to work with sensorless homing, and are largely preconfigured. You can start from "Finding the right StallGuard threshold". You do not need to add sensorless homing macros, I built them in.
+
+#### Z Offset Configuration
+Update your Z offset
+* Remember, with Tap, your nozzle IS the probe. You'll need to manually calibrate the probe's Z offset by using PROBE_CALIBRATE and your chosen leveling method (I use a sheet of paper)
+
+### Final Checks
+1. Ensure that your printer can reliably home X, Y, and Z.
+2. Test that your Extruder, Hotend, Hotend Fan, Part Cooling Fan, and [optionally] the runout sensor all work as expected.
+3. PID Calibrate your Hotend following [this guide](https://www.obico.io/blog/klipper-pid-tuning/)
+4. Follow the [Ellis3dp print tuning guide](https://ellis3dp.com/Print-Tuning-Guide/articles/extruder_calibration.html) to dial in your Stealthburner
+5. Configure Input Shaping on both X and Y
+* You can reference [this guide](https://www.klipper3d.org/Measuring_Resonances.html#bed-slinger-printers) for help
+* Your X axis now has a built in accelerometer. You will still need to plug in the included accelerometer and mount it on the Y axis, the same way you would do on the stock T500.
+* I use the SHAPER_CALIBRATE macro for automatic calibration 
 
 
