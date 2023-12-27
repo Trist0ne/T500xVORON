@@ -76,7 +76,7 @@ You can do the following sections in any order, they are just listed in the orde
 ### Raising the Bed
 The stock T500 gantry and bed are mounted in such a way that the gantry cannot drop low enough to touch the nozzle to the bed. Obviously, this is problematic. Because of the way the gantry is designed, there is no easy way to gracefully drop the toolhead low enough; thus, we have to go the other direction and raise the bed!
 * "Wont I lose Z height??"
-  * Nope! In it's stock form, the T500 Z rails can raise the nozzle up to 550mm. With these spacers in place, you will still have 520mm of Z clearance (though it will stil be software limited to 500mm), so there is no lost Z build height!
+  * Nope! In it's stock form, the T500 Z rails can raise the nozzle up to 550mm. With these spacers in place, you will still have 520mm of Z clearance (though it will still be software limited to 500mm), so there is no lost Z build height!
 * "Wont these spacers melt so close to the bed? Are they strong enough?"
   * Nope! They're far enough from the bed that they are well within the longterm operating temperaturs of ABS. ABS also does not stress creep over time, and should remain durable for the life of the printer
  
