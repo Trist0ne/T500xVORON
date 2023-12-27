@@ -3,6 +3,9 @@ A Comgrow T500 Rework to install an RC8 Voron Stealthburner, complete with Chaot
 
 The guide below will cover the full T500 conversion; you may be able to deviate if you just want parts of it (for example; enabling sensorless homing on your stock T500) or you want to use different components (such as a different toolhead board or CANBUS adapter), but you're on your own if you do so. 
 
+## TABLE OF CONTENTS
+
+
 ## Things to Buy
 * [ChaoticLabs CNC TAP **V2**](https://chaoticlab.xyz/products/cnc-voron-tap). This is the nozzle probing system. It MUST be the V2
 * [BTT U2C V2.1 CANBUS USB adapter](https://www.amazon.com/BIGTREETECH-Adapter-Supports-Connection-Interface/dp/B0B1X47319). This is the USB to CANBUS adapter
