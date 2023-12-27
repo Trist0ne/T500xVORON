@@ -12,4 +12,11 @@ The guide below will cover the full T500 conversion; you may be able to deviate 
 
 ## Things to Print
 THESE MUST ALL BE PRINTED FROM ABS OR ASA. THEY ARE DESIGNED FOR ABS. OTHER MATERIALS ARE NOT SUITABLE EITHER DUE TO THEIR TEMPERATURE RESISTANCE OR STRUCTURE CREEP OVER TIME; YOU HAVE BEEN WARNED
-* [Voron Stealthburner ]
+* [1x Voron Stealthburner](https://github.com/VoronDesign/Voron-Stealthburner/tree/main)
+  * Optionally use the inline filament runout sensor located [here](https://www.printables.com/model/292186-stealthburner-clockwork-2-filament-sensor/files). This replaces the main_body of the CW2 extruder.
+  * Ensure you use the Cable_Cover_for_PCB
+* [1x Toolhead Adapter Plate](https://github.com/Trist0ne/T500xVORON/blob/main/STL/Toolhead%20Adapter%20Plate.stl)
+* [2x Bed Spacers](https://github.com/Trist0ne/T500xVORON/blob/main/STL/Bed%20Spacer%20T500%20v3.stl)
+* [1x CW2 Cable Bridge](https://github.com/bigtreetech/EBB/blob/master/EBB%20SB2240_2209%20CAN/STL/CW2%20Cable%20Bridge.STL)
+* [1x CAN Cable Strain Relief](https://github.com/bigtreetech/EBB/blob/master/EBB%20SB2240_2209%20CAN/STL/Printed_Part_for_CAN_Cable_V1.2.stl)
+* [1x U2C Adapter Plate](https://www.printables.com/model/422274-bigtreetech-u2c-mount/files) You will also need some double sided mounting tape to secure this in the electronics bay
