@@ -4,6 +4,15 @@ A Comgrow T500 Rework to install an RC8 Voron Stealthburner, complete with Chaot
 The guide below will cover the full T500 conversion; you may be able to deviate if you just want parts of it (for example; enabling sensorless homing on your stock T500) or you want to use different components (such as a different toolhead board or CANBUS adapter), but you're on your own if you do so. 
 
 ## TABLE OF CONTENTS
+### [THINGS TO BUY](https://github.com/Trist0ne/T500xVORON/blob/main/README.md#things-to-buy)
+### [THINGS TO PRINT](https://github.com/Trist0ne/T500xVORON/blob/main/README.md#things-to-print)
+### [THE BUILD](https://github.com/Trist0ne/T500xVORON/blob/main/README.md#the-build)
+#### [PREREQUISITES](https://github.com/Trist0ne/T500xVORON/blob/main/README.md#prerequisites)
+#### [MOUNTING THE TOOLHEAD](https://github.com/Trist0ne/T500xVORON/blob/main/README.md#mounting-the-toolhead)
+#### [RAISING THE BED](https://github.com/Trist0ne/T500xVORON/blob/main/README.md#raising-the-bed)
+#### [WIRING WIRING WIRING](https://github.com/Trist0ne/T500xVORON/blob/main/README.md#wiring-wiring-wiring)
+#### [SOFTWARE CONFIGURATION](https://github.com/Trist0ne/T500xVORON/blob/main/README.md#software-configuration)
+#### [SLICER CONFIGURATION](https://github.com/Trist0ne/T500xVORON/blob/main/README.md#slicer-configuration)
 
 
 ## Things to Buy
@@ -173,4 +182,13 @@ Update your Z offset
 * Your X axis now has a built in accelerometer. You will still need to plug in the included accelerometer and mount it on the Y axis, the same way you would do on the stock T500.
 * I use the SHAPER_CALIBRATE macro for automatic calibration 
 
+### Slicer Configuration
+1. Edit your printer settings "Machine G-code" tab as follows:
+* PRINT_START EXTRUDER=[nozzle_temperature_initial_layer] BED=[bed_temperature_initial_layer_single] CHAMBER=[chamber_temperature]
+* PRINT_END
+* ![image](https://github.com/Trist0ne/T500xVORON/assets/41755299/38245c9d-8e7e-4014-8cb4-d94785227172)
+2. In the 'Quality' tab, enable Arc Fitting
+3. In the 'Others' tab, enable
+* Label Objects
+* Exclude Objects
 
