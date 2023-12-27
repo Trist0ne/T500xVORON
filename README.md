@@ -99,7 +99,7 @@ The stock T500 gantry and bed are mounted in such a way that the gantry cannot d
 5. Check to ensure the bed is able to slide all the way back and forth across its rails. If you did not use M4x40mm screws to attach the spacers, they may stick out from the rails and contact the Y Stepper drivers.
 
 ### Wiring Wiring Wiring
-Thankfully for the most part we are SIMPLIFYING the wiring than making it more complicated. It should go without saying that your printer should be fully powered off and unplugged for this step especially.
+Thankfully for the most part we are SIMPLIFYING the wiring rather than making it more complicated. It should go without saying that your printer should be fully powered off and unplugged for this step especially.
 
 #### U2C Wiring and Mounting
 1. Remove the electronics bay cover
