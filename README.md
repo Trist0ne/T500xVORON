@@ -37,10 +37,10 @@ You can do the following sections in any order, they are just listed in the orde
 ### Prerequisites
 * Flash KATAPULT and Klipper to the U2C CANBUS adapter AND the SB2209 Toolhead board
   * To make your life easier, do this before assembling anything.
-  * An excellent resource for CANBUS flashing is located [here](https://github.com/Esoterical/voron_canbus). There are subfolders for the U2C and the SB2209 rp2040 
+  * An excellent resource for CANBUS flashing I reccomend following is located [here](https://github.com/Esoterical/voron_canbus). There are subfolders for the U2C and the SB2209 rp2040. 
 * Assemble the VORON Stealthburner
   * Follow the build guide located [here](https://github.com/VoronDesign/Voron-Stealthburner/tree/main/Manual)
-  * Attach and wire the SB2209 to the Stealthburner  
+  * Attach and wire the SB2209 to the Stealthburner; double check your wiring carefully for the CNC-TAP especially 
 
 ### Mounting the Toolhead
 1. Start by inserting {4x} M3 5x4mm heat set inserts into the adapter plate. Take care to ensure they are perfectly level with the surface of the plastic.
@@ -98,6 +98,8 @@ Thankfully for the most part we are SIMPLIFYING the wiring than making it more c
 * The stock toolhead umbilical (you will need to cut open the Z axis wiring loom to remove this fully. Do NOT cut or remove the X axis stepper wires)
   * Remove the umbilical from the X axis drag chain; we will still utilize the drag chain. Unscrew the mounts on the drag chain and move it as close to the Z axis rails as you can, then reattach it 
 * The X and Y axis endstops (you will need to cut open the Z axis wiring loom to remove this fully. Do NOT cut or remove the X axis stepper wires)
+* Flick the switch highlighted below to enable sensorless homing
+* [Sensorless Homing Image]
 
 3. Using at least 20 AWG wire, connect the U2C to the T500 power supply
 * There are two open attachment points for power and ground on the stock power supply you can utilize
@@ -121,5 +123,25 @@ Thankfully for the most part we are SIMPLIFYING the wiring than making it more c
 2. Using the screws on top of the Z axis, move the toolhead mount as far up the Z axix and as far to the right of the X axis as it will go.
 * This will determine how much cable length you need
 
-3. Thread the CANBUS cable from the toolhead port through the X axis drag chain, following the same path the stock umbilical cable did. Use the same anchor points to attach the cable to the edge of the X axis and the bottom of the Z axis
-* LEAVE SOME ROOM FOR SLACK. While you want these cables managed nicely, you dont want them routed so tightly that they're damaging the things they're attached to, or the internal wiring.  
+3. Thread the CANBUS cable from the toolhead port through the X axis drag chain, following the same path the stock umbilical cable did into the electronics bay. Use the same anchor points to attach the cable to the edge of the X axis and the bottom of the Z axis
+* LEAVE SOME ROOM FOR SLACK. While you want these cables managed nicely, you dont want them routed so tightly that they're damaging the things they're attached to, or the internal wiring. Dont attach it so tightly that the Z axis rips the cable out at max height!
+* Route the cable cleanly through the electronics bay to the U2C. Plug it in, then zip tie up the rest of the slack to one of the stock anchor points.
+* Zip tie the CANBUS cable to the X axis stepper to keep everything clean and organized
+
+#### Wiring Checks
+Dont think, just double check them
+1. Power supply POSITIVE is wired to U2C VIN. Power supply GROUND is wired to U2C GND
+2. CAN_L, CAN_H, GND, and VIN on the CANBUS cable are aligned to the CAN_L, CAN_H, GND, and VIN pins on the U2C
+
+When you're 100% sure everything is lined up, plug your printer in and flip the power on. Check to make sure the stock mainboard, the U2C and the SB2209 all light up (and that nothing goes pop!). When you're satisfied with your work, reinstall the electronics bay cover and screw it back down. 
+
+### Software Configuration
+
+1. Access your printers web-ui. In the machine tab, delete ALL the config files.
+2. Download the Klipper Configurations folder from this Github ([here](https://github.com/Trist0ne/T500xVORON/tree/main/Klipper%20Configurations)), and upload them ALL to the printer's config section.
+* ![image](https://github.com/Trist0ne/T500xVORON/assets/41755299/258b8037-95a2-4bea-b8ea-d8ef3a9e6b04)
+3. 
+
+   
+
+
