@@ -117,7 +117,7 @@ Thankfully for the most part we are SIMPLIFYING the wiring rather than making it
 * There are two open attachment points for power and ground on the stock power supply you can utilize
 * Connect the wires from the power supply to the green VIN/GND points on the U2C
 * ![image](https://github.com/Trist0ne/T500xVORON/assets/41755299/df421d74-ece0-4e10-b0ab-56382d2021f4)
-* Do not get them backwards unless you to fry your boards!!!
+* Do not get them backwards unless you want to fry your boards!!!
 
 4. Insert the jumper included with the U2C on the pins labled 120R, near the USB-C port
 
