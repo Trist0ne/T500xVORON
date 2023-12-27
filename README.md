@@ -132,7 +132,7 @@ Thankfully for the most part we are SIMPLIFYING the wiring rather than making it
 1. Crimp the end of the long cable included with the SB2209 with the Molex Microfit 4 pin connector that came with the U2C. Take great care that you align CAN_L, CAN_H, GND, and VIN appropriatly (see pinout above; the black 4 pin connector next to the large white one), or you will pop your toolhead board.
 * You do not need to shorten the cable; there is room in the electronics back to tuck the slack away nicely.
 
-2. Using the screws on top of the Z axis, move the toolhead mount as far up the Z axix and as far to the right of the X axis as it will go.
+2. Using the screws on top of the Z axis, move the toolhead mount as far up the Z axis and as far to the right of the X axis as it will go.
 * This will determine how much cable length you need
 
 3. Thread the CANBUS cable from the toolhead port through the X axis drag chain, following the same path the stock umbilical cable did into the electronics bay. Use the same anchor points to attach the cable to the edge of the X axis and the bottom of the Z axis
