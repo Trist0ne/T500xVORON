@@ -180,7 +180,12 @@ Update your Z offset
 5. Configure Input Shaping on both X and Y
 * You can reference [this guide](https://www.klipper3d.org/Measuring_Resonances.html#bed-slinger-printers) for help
 * Your X axis now has a built in accelerometer. You will still need to plug in the included accelerometer and mount it on the Y axis, the same way you would do on the stock T500.
-* I use the SHAPER_CALIBRATE macro for automatic calibration 
+* I use the SHAPER_CALIBRATE macro for automatic calibration
+
+6. Retune your Pressure Advance
+* Follow [this guide](https://github.com/SoftFever/OrcaSlicer/wiki/Calibration) from the Orca Slicer wiki
+
+7. Pat yourself on the back for a job well done!
 
 ### Slicer Configuration
 1. Edit your printer settings "Machine G-code" tab as follows:
