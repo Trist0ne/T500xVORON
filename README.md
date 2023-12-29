@@ -56,20 +56,25 @@ You can do the following sections in any order, they are just listed in the orde
 
 ### Mounting the Toolhead
 1. Start by inserting {4x} M3 5x4mm heat set inserts into the adapter plate. Take care to ensure they are perfectly level with the surface of the plastic.
-   [Inset image]
+![image](https://github.com/Trist0ne/T500xVORON/assets/41755299/1799de0e-7ea4-4598-afaf-f19714c63125)
+
 
 2. Unclip the stock toolhead umbilical and drag chain mount, and move them out of the way. Unmount the stock T500 toolhead and drag chain plate. There are 4 screws around the outside of the plastic casing (keep these!), several screws holding the drag chain plate to the rail. You should be left with a metal rectangular sliding rail.
-   [Insert Images]
+![image](https://github.com/Trist0ne/T500xVORON/assets/41755299/e83a2e70-2edc-46f8-97bc-da69bf9ecbf4)
+
 
 3. Using the 4 casing screws from the stock toolhead, attach the Adapter Plate to the rectangular sliding rail. Check to ensure the rail still slides back and forth. 
-   [Insert Images]
+![image](https://github.com/Trist0ne/T500xVORON/assets/41755299/f67d71d7-87a8-44ed-b62f-64451ad39fc4)
+
 
 4. Attach the ChaoticLabs CNC TAP to the Adapter Plate
    * The attachment process is the same as the one located in the [CNC TAP build guide](https://github.com/Chaoticlab/CNC-Tap-for-Voron/blob/master/Manual/CNC_Voron_Tap_V2_Build_Guide_20231013.pdf)
 
 5. Attach the Stealthburner assembly to the CNC TAP. Check to make sure the whole assembly can slide up and down (the 'TAP' function)
    * The attachment process for the Stealthburner is the same as the one located in the [CNC TAP build guide](https://github.com/Chaoticlab/CNC-Tap-for-Voron/blob/master/Manual/CNC_Voron_Tap_V2_Build_Guide_20231013.pdf)
-   * Ensure you attach the cable bridge shown at the end of the build guide. We will not use the steel wire, but the bridge will provide strain relief and stability to the CANBUS cable port. 
+   * Ensure you attach the cable bridge shown at the end of the build guide. We will not use the steel wire, but the bridge will provide strain relief and stability to the CANBUS cable port.
+![image](https://github.com/Trist0ne/T500xVORON/assets/41755299/4ad1ae06-10eb-4e5d-9737-56c6c2a6584a)
+
  
 6. Check clearences, and appreicate how nice the Stealthburner looks mounted on the T500
 
@@ -81,18 +86,23 @@ The stock T500 gantry and bed are mounted in such a way that the gantry cannot d
   * Nope! They're far enough from the bed that they are well within the longterm operating temperaturs of ABS. ABS also does not stress creep over time, and should remain durable for the life of the printer
  
 1. Remove the magnetic sheet, and remove the 8x M4 socket head screws using the access holes
-   * [Insert Image]
+   * ![image](https://github.com/Trist0ne/T500xVORON/assets/41755299/ddf7ffba-6176-486a-8fc0-d5f8d951e9f6)
+
    * If you have a difficult time getting a tool to fit in those holes, you can unbolt every M4 countersunk screw and remove the headbed entirely.
    * If you remove the bed from the bed frame, remove the screws holding the bed drag chain to the bed frame
-   * [Insert image]
+   * ![image](https://github.com/Trist0ne/T500xVORON/assets/41755299/622494c6-0444-4c62-af16-58f4166bf830)
+
 
 2. Carefully raise the bed frame, and align the bed spacers to the long rectangular rails
    * Be very careful not to damage the heatbed wiring!
+![image](https://github.com/Trist0ne/T500xVORON/assets/41755299/49a9cc11-a071-44c6-a119-31e2612c8e6c)
+
    * Depending on how much your ABS print shrunk, you may need to slightly drill out the holes in the printed bed spacers; you'll never get them properly aligned unless the screws can slide through the spacers with only light resistance
-   * [Inset Image]
+![image](https://github.com/Trist0ne/T500xVORON/assets/41755299/a1e1170f-3aea-4827-b9fe-b631b5aab490)
+
 
 3. Using 8x M4x40mm screws, bolt the bed frame to the Y axis rails through the spacers. Ensure everything is very tight and does not have any play; you dont want your bed level changing or your bed flying off its rails!
-   * [Insert Image]
+![image](https://github.com/Trist0ne/T500xVORON/assets/41755299/e2aad75b-baf5-4722-8da7-eb1707f60aba)
 
 4. If you removed it in step 1, reattach the drag chain to the bed frame
 
@@ -104,14 +114,16 @@ Thankfully for the most part we are SIMPLIFYING the wiring rather than making it
 #### U2C Wiring and Mounting
 1. Remove the electronics bay cover
   * There are 6 screws, 4 in the front and two in the back
-  * [Insert image]
 
 2. Carefully unplug and remove the following items from the printer. You will need to cut zip ties and undo screws where appropriate:
 * The stock toolhead umbilical (you will need to cut open the Z axis wiring loom to remove this fully. Do NOT cut or remove the X axis stepper wires)
   * Remove the umbilical from the X axis drag chain; we will still utilize the drag chain. Unscrew the mounts on the drag chain and move it as close to the Z axis rails as you can, then reattach it 
 * The X and Y axis endstops (you will need to cut open the Z axis wiring loom to remove this fully. Do NOT cut or remove the X axis stepper wires)
+* ![image](https://github.com/Trist0ne/T500xVORON/assets/41755299/3abb4e46-f0a4-4822-b5aa-caab066ac0e3)
+
 * Flick the switch highlighted below to enable sensorless homing
-* [Sensorless Homing Image]
+* ![image](https://github.com/Trist0ne/T500xVORON/assets/41755299/6f1cea17-c823-405f-b56b-fb6b61758521)
+
 
 3. Using at least 20 AWG wire, connect the U2C to the T500 power supply
 * There are two open attachment points for power and ground on the stock power supply you can utilize
