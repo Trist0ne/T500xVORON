@@ -76,7 +76,7 @@ You can do the following sections in any order, they are just listed in the orde
 ![image](https://github.com/Trist0ne/T500xVORON/assets/41755299/4ad1ae06-10eb-4e5d-9737-56c6c2a6584a)
 
  
-6. Check clearences, and appreicate how nice the Stealthburner looks mounted on the T500
+6. Check clearences, and appreciate how nice the Stealthburner looks mounted on the T500
 
 ### Raising the Bed
 The stock T500 gantry and bed are mounted in such a way that the gantry cannot drop low enough to touch the nozzle to the bed. Obviously, this is problematic. Because of the way the gantry is designed, there is no easy way to gracefully drop the toolhead low enough; thus, we have to go the other direction and raise the bed!
