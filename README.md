@@ -85,7 +85,7 @@ The stock T500 gantry and bed are mounted in such a way that the gantry cannot d
 * "Wont these spacers melt so close to the bed? Are they strong enough?"
   * Nope! They're far enough from the bed that they are well within the longterm operating temperaturs of ABS. ABS also does not stress creep over time, and should remain durable for the life of the printer
  
-1. Remove the magnetic sheet, and remove the 8x M4 socket head screws using the access holes
+1. Remove the print surface, and remove the 8x M4 socket head screws using the access holes
    * ![image](https://github.com/Trist0ne/T500xVORON/assets/41755299/ddf7ffba-6176-486a-8fc0-d5f8d951e9f6)
 
    * If you have a difficult time getting a tool to fit in those holes, you can unbolt every M4 countersunk screw and remove the headbed entirely.
