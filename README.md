@@ -49,7 +49,7 @@ You can do the following sections in any order, they are just listed in the orde
 ### Prerequisites
 * Flash KATAPULT and Klipper to the U2C CANBUS adapter AND the SB2209 Toolhead board
   * To make your life easier, do this before assembling anything.
-  * An excellent resource for CANBUS flashing I reccomend following is located [here](https://github.com/Esoterical/voron_canbus). There are subfolders for the U2C and the SB2209 rp2040. 
+  * An excellent resource for CANBUS flashing I reccomend following is located [here](https://github.com/Esoterical/voron_canbus). There are subfolders for the [U2C](https://github.com/Esoterical/voron_canbus/tree/main/can_adapter/BigTreeTech%20U2C%20v2.1) and the [SB2209 rp2040](https://github.com/Esoterical/voron_canbus/tree/main/toolhead_flashing/common_hardware/BigTreeTech%20SB2209%20(RP2040)). 
 * Assemble the VORON Stealthburner
   * Follow the build guide located [here](https://github.com/VoronDesign/Voron-Stealthburner/tree/main/Manual)
   * Attach and wire the SB2209 to the Stealthburner; double check your wiring carefully for the CNC-TAP especially 
