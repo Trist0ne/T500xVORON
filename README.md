@@ -1,7 +1,7 @@
 # T500xVORON
 A Comgrow T500 Rework to install an RC8 Voron Stealthburner, complete with ChaoticLabs CNC Tap for nozzle based probing and Auto-Z offset, and CANBUS single cable intergration. This should be considered a moderatly advanced build; you will need experience or be willing to learn configuring Klipper, crimping/soldering wire, using heat-set inserts, and be comfortable dissasembling/reassembling the T500. If your printer blows up into a million pieces (or otherwise doesn't work like you want it to), you are responsible.
 
-The guide below will cover the full T500 conversion; you may be able to deviate if you just want parts of it (for example; enabling sensorless homing on your stock T500) or you want to use different components (such as a different toolhead board or CANBUS adapter), but you're on your own if you do so. 
+The guide below will cover the full T500 conversion; you may be able to deviate if you just want parts of it (for example; enabling sensorless homing on your stock T500) or you want to use different components (such as a different toolhead board, different CANBUS adapter, or not using CANBUS at all), but you're on your own if you do so. 
 
 ## TABLE OF CONTENTS
 ### [THINGS TO BUY](https://github.com/Trist0ne/T500xVORON/blob/main/README.md#things-to-buy)
@@ -44,7 +44,7 @@ Print Settings:
 * Supports: NONE
 
 ## The Build
-You can do the following sections in any order, they are just listed in the order I did them. Some of the steps will be linked to other guides for the non-conversion specific parts as they cover them more in depth, and there's no need to reinvent the wheel. 
+You can do the following sections in any order, they are just listed in the order I did them. **Some of the steps will be linked to other guides** for the non-T500 conversion specific parts as they cover them more in depth, and there's no need to reinvent the wheel.
 
 ### Prerequisites
 * Flash KATAPULT and Klipper to the U2C CANBUS adapter AND the SB2209 Toolhead board
