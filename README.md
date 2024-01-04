@@ -20,7 +20,10 @@ The guide below will cover the full T500 conversion; you may be able to deviate 
 * [BTT U2C V2.1 CANBUS USB adapter](https://www.amazon.com/BIGTREETECH-Adapter-Supports-Connection-Interface/dp/B0B1X47319). This is the USB to CANBUS adapter
 * [BTT SB 2209 RP2040](https://biqu.equipment/products/bigtreetech-ebb-sb2209-can-v1-0?variant=40377392431202) This is the toolhead control board. You should get the 2209 **RP2040** variant.
 * [Everything from Fasteners & Electronics section of the BOM of the latest VORON Stealthburner](https://vorondesign.com/voron_stealthburner). Do not cheap out on the BMG extruder kit!
-* [A Stealthburner compatible Hotend of your choosing](https://us.store.bambulab.com/products/complete-hotend-assembly-x1-series) I use the Bambu Labs hardened steel hotend assembly, but any stealthburner compatible hotend will work. 
+* [A Stealthburner compatible Hotend of your choosing](https://us.store.bambulab.com/products/complete-hotend-assembly-x1-series) I use the Bambu Labs hardened steel hotend assembly, but any stealthburner compatible hotend will work.
+* A few extra parts you will need:
+  * 4x M3 5x4mm heat set inserts (same ones that VORONs use)
+  * 8x M4x40mmm Socket Heat Cap Screws (Or whatever style M4x40mm screws you would like, SHCS's are just the easiest to tighten during the build)
 
 ## Things to Print
 **THESE MUST ALL BE PRINTED FROM ABS OR ASA. THEY ARE DESIGNED FOR ABS. OTHER MATERIALS ARE NOT SUITABLE EITHER DUE TO THEIR TEMPERATURE RESISTANCE OR STRUCTURE CREEP OVER TIME; YOU HAVE BEEN WARNED**
@@ -84,7 +87,7 @@ The stock T500 gantry and bed are mounted in such a way that the gantry cannot d
 * "Wont I lose Z height??"
   * Nope! In it's stock form, the T500 Z rails can raise the nozzle up to 550mm. With these spacers in place, you will still have 520mm of Z clearance (though it will still be software limited to 500mm), so there is no lost Z build height!
 * "Wont these spacers melt so close to the bed? Are they strong enough?"
-  * Nope! They're far enough from the bed that they are well within the longterm operating temperaturs of ABS. ABS also does not stress creep over time, and should remain durable for the life of the printer
+  * Nope! They're far enough from the bed that they are well within the longterm operating temperature limit of ABS. ABS also does not stress creep over time, and should remain durable for the life of the printer
  
 1. Remove the print surface, and remove the 8x M4 socket head screws using the access holes
    * ![image](https://github.com/Trist0ne/T500xVORON/assets/41755299/ddf7ffba-6176-486a-8fc0-d5f8d951e9f6)
@@ -107,14 +110,15 @@ The stock T500 gantry and bed are mounted in such a way that the gantry cannot d
 
 4. If you removed it in step 1, reattach the drag chain to the bed frame
 
-5. Check to ensure the bed is able to slide all the way back and forth across its rails. If you did not use M4x40mm screws to attach the spacers, they may stick out from the rails and contact the Y Stepper drivers.
+5. Check to ensure the bed is able to slide **all** the way back and forth across its rails. If you did not use M4x40mm screws to attach the spacers, they may stick out from the rails and hit the Y Stepper drivers.
 
 ### Wiring Wiring Wiring
-Thankfully for the most part we are SIMPLIFYING the wiring rather than making it more complicated. It should go without saying that your printer should be fully powered off and unplugged for this step especially.
+Thankfully for the most part we are SIMPLIFYING the wiring rather than making it more complicated. It should go without saying that your printer should be **fully powered off and unplugged** for the next few steps especially.
 
 #### U2C Wiring and Mounting
 1. Remove the electronics bay cover
   * There are 6 screws, 4 in the front and two in the back
+  * You will have to slide the heatbed back and forth to reach them all
 
 2. Carefully unplug and remove the following items from the printer. You will need to cut zip ties and undo screws where appropriate:
 * The stock toolhead umbilical (you will need to cut open the Z axis wiring loom to remove this fully. Do NOT cut or remove the X axis stepper wires)
@@ -135,10 +139,10 @@ Thankfully for the most part we are SIMPLIFYING the wiring rather than making it
 4. Insert the jumper included with the U2C on the pins labled 120R, near the USB-C port
 
 5. Mount the U2C in the electronics bay using the printed mount and double sided tape to secure it
-* I chose to mount it here
+* I chose to mount it here ![21556689-9E68-4C35-BBAF-199B8BBE90C0_1_201_a](https://github.com/Trist0ne/T500xVORON/assets/41755299/5607ba5f-a9a9-49f2-927e-d3ad6f1ad170)
 
-6. Run a USB-C to USB-A cable from the U2C to the USB port on the T500 screen, following the existing cable routing path
-* [Insert Image]
+
+6. Run a USB-C to USB-A cable from the U2C an open USB port under the T500 screen, following the existing cable routing path from the stock mainboard. Zip tie up the excess; keep it neat!
 
 #### Toolhead CANBUS Cable
 
@@ -152,6 +156,8 @@ Thankfully for the most part we are SIMPLIFYING the wiring rather than making it
 * LEAVE SOME ROOM FOR SLACK. While you want these cables managed nicely, you dont want them routed so tightly that they're damaging the things they're attached to, or the internal wiring. Dont attach it so tightly that the Z axis rips the cable out at max height!
 * Route the cable cleanly through the electronics bay to the U2C. Plug it in, then zip tie up the rest of the slack to one of the stock anchor points.
 * Zip tie the CANBUS cable to the X axis stepper wire to keep everything clean and organized
+* Finally, Zip tie the CANBUS cable to the edge of the drag chain. The plasic mount on the EBB cable will provide plenty of strain relief ![0A58DF86-1371-48C0-9A15-90A06EAC607F_1_201_a](https://github.com/Trist0ne/T500xVORON/assets/41755299/5f7182dd-c8aa-468e-adab-82e27f99e1b3)
+
 
 #### Wiring Checks
 Dont think, just double check them
@@ -163,21 +169,21 @@ When you're 100% sure everything is lined up, plug your printer in and flip the 
 ### Software Configuration
 
 #### Initial Startup
-1. Install KAMP on your printer, located [here](https://github.com/kyleisah/Klipper-Adaptive-Meshing-Purging)
+1. SSH into your printer. The username is **mks**, and the password is **makerbase**. Install KAMP on your printer, located [here](https://github.com/kyleisah/Klipper-Adaptive-Meshing-Purging)
 2. Access your printers web-ui. In the machine tab, delete ALL the config files.
 3. Download the Klipper Configurations folder from this Github ([here](https://github.com/Trist0ne/T500xVORON/tree/main/Klipper%20Configurations)), and upload them ALL to the printer's config section.
 * ![image](https://github.com/Trist0ne/T500xVORON/assets/41755299/258b8037-95a2-4bea-b8ea-d8ef3a9e6b04)
 3. Configure the annotated sections of **toolboard.cfg** and **u2c.cfg**. You will need to fill in the canbus_uuid sections to to tell your printer the CAN addresses of your U2C and SB2209
-4. Save and click 'firmware restart'; resolve any errors that Klipper may throw, if any (it will tell you what the issue is).
+4. Save and click 'firmware restart'; resolve any errors that Klipper may throw, if any (the error message will tell you what the configuration issue is).
 
 #### Z Endstop Check
-DO THIS BEFORE ATTEMPTING TO HOME THE PRINTER
+**DO THIS BEFORE ATTEMPTING TO HOME THE PRINTER**
 1. Once Klipper has successfully loaded and can interface with the U2C and SB2209, navigate to the machine page of the web UI and press 'sync endstops'
 2. Endstop Z should be 'OPEN'
 3. By hand, move the toolhead up to the top of it's travel to trigger the CNC TAP sensor. Hold it in place and click the 'sync enstops' button. Endstop Z should now be marked as 'CLOSED'
 
 #### Sensorless Homing Configuration
-DO THIS BEFORE ATTEMPTING TO HOME THE PRINTER
+**DO THIS BEFORE ATTEMPTING TO HOME THE PRINTER**
 1. Follow the guide located [here](https://docs.vorondesign.com/community/howto/clee/sensorless_xy_homing.html) to calibrate the sensorless homing.
 * The default configurations are made to work with sensorless homing, and are largely preconfigured. You can start from "Finding the right StallGuard threshold". You do not need to add sensorless homing macros, I built them in.
 
