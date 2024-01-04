@@ -53,7 +53,7 @@ You can do the following sections in any order, they are just listed in the orde
   * This can be a little tricky if you've never done it before, but its not overly difficult. Technically you can skip installing KATAPULT and just flash Klipper directly, but it will make updating klipper significantly more difficult later. 
 * Assemble the VORON Stealthburner
   * Follow the build guide located [here](https://github.com/VoronDesign/Voron-Stealthburner/tree/main/Manual). This is a large step, and your toolhead will only function as well as you assemble it, so take your time.
-  * Attach and wire the SB2209 to the Stealthburner; double check your wiring carefully for the CNC-TAP especially 
+  * Attach and wire the SB2209 to the Stealthburner, following the build guide [here](https://github.com/bigtreetech/EBB/blob/master/EBB%20SB2209%20CAN%20(RP2040)/Build%20Guide/EBB%20SB2209%20CAN%20V1.0（RP2040）BUILD%20GUIDE_1129.pdf); double check your wiring carefully for the CNC-TAP especially. The colors may not be standard on your TAP wiring, and putting them in the wrong order can fry your TAP sensor.
 
 ### Mounting the Toolhead
 1. Start by inserting {4x} M3 5x4mm heat set inserts into the adapter plate. Take care to ensure they are perfectly level with the surface of the plastic.
