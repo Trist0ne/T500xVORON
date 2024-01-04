@@ -47,9 +47,10 @@ Print Settings:
 You can do the following sections in any order, they are just listed in the order I did them. **Some of the steps will be linked to other guides** for the non-T500 conversion specific parts as they cover them more in depth, and there's no need to reinvent the wheel.
 
 ### Prerequisites
-* Flash KATAPULT and Klipper to the U2C CANBUS adapter AND the SB2209 Toolhead board
+* Flash both KATAPULT and Klipper to the U2C CANBUS adapter AND the SB2209 Toolhead board
   * To make your life easier, do this before assembling anything.
-  * An excellent resource for CANBUS flashing I reccomend following is located [here](https://github.com/Esoterical/voron_canbus). There are subfolders for the [U2C](https://github.com/Esoterical/voron_canbus/tree/main/can_adapter/BigTreeTech%20U2C%20v2.1) and the [SB2209 rp2040](https://github.com/Esoterical/voron_canbus/tree/main/toolhead_flashing/common_hardware/BigTreeTech%20SB2209%20(RP2040)). 
+  * An excellent resource for CANBUS flashing I reccomend following is located [here](https://github.com/Esoterical/voron_canbus). There are subfolders for the [U2C](https://github.com/Esoterical/voron_canbus/tree/main/can_adapter/BigTreeTech%20U2C%20v2.1) and the [SB2209 rp2040](https://github.com/Esoterical/voron_canbus/tree/main/toolhead_flashing/common_hardware/BigTreeTech%20SB2209%20(RP2040)).
+  * This can be a little tricky if you've never done it before, but its not overly difficult. Technically you can skip installing KATAPULT and just flash Klipper directly, but it will make updating klipper significantly more difficult later. 
 * Assemble the VORON Stealthburner
   * Follow the build guide located [here](https://github.com/VoronDesign/Voron-Stealthburner/tree/main/Manual)
   * Attach and wire the SB2209 to the Stealthburner; double check your wiring carefully for the CNC-TAP especially 
