@@ -133,8 +133,10 @@ Thankfully for the most part we are SIMPLIFYING the wiring rather than making it
 
 
 3. Using at least 20 AWG wire, connect the U2C to the T500 power supply
-* There are two open attachment points for power and ground on the stock power supply you can utilize
-* Connect the wires from the power supply to the green VIN/GND points on the U2C
+* There are two open attachment points for power and ground on the stock power supply you can utilize. This is an example; please pay attention to which one is negative and which one is positive
+* ![image](https://github.com/Trist0ne/T500xVORON/assets/41755299/909fa600-5ebe-4062-ad0d-fbee3cfea6d4)
+
+* Connect the wires from the +/- power supply to the green VIN/GND points on the U2C
 * ![image](https://github.com/Trist0ne/T500xVORON/assets/41755299/df421d74-ece0-4e10-b0ab-56382d2021f4)
 * Do not get them backwards unless you want to fry your boards!!!
 
