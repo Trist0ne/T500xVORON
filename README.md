@@ -7,10 +7,11 @@ The guide below will cover the full T500 conversion; you may be able to deviate 
 * VORON TAP is far more accurate than the stock inductive Z probe, and is not prone to thermal drift. 
 * TAP allows for automatic Z offset, every print, regardless of print surface. "Always perfect first layers"!
 * The LED's on the hotend can show the current printer status, change as the printer heats up to visually show temperature, and illuminate the nozzle while printing. 
-* The VORON Stealthburner allows you to use more off-the-shelf components that are easy to obtain, since it's difficult to get replacements for Comgrow proprietary parts.
+* The VORON Stealthburner allows you to use more off-the-shelf, higher quality components that are easy to obtain and replace. It's difficult to get replacements for Comgrow proprietary parts.
+* An additional ADXL sensor on the X axis simplifies input shaping.
 * The modular design allows you to change out hotends easily, or use different hotend styles than the stock one.
 * Simplified wiring with CANBUS cuts the amount of wires running to the toolhead down to just one unified cable.
-* It just damn **looks** cooler
+* It just damn **looks** cooler.
 
 ## TABLE OF CONTENTS
 ### [THINGS TO BUY](https://github.com/Trist0ne/T500xVORON/blob/main/README.md#things-to-buy)
