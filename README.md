@@ -143,7 +143,7 @@ Thankfully for the most part we are SIMPLIFYING the wiring rather than making it
 * The X and Y axis endstops (you will need to cut open the Z axis wiring loom to remove this fully. Do NOT cut or remove the X axis stepper wires)
 * ![image](https://github.com/Trist0ne/T500xVORON/assets/41755299/3abb4e46-f0a4-4822-b5aa-caab066ac0e3)
 
-* Flick the switch highlighted below to enable sensorless homing
+* Flick the switch highlighted below to "ON" to enable sensorless homing
 * ![image](https://github.com/Trist0ne/T500xVORON/assets/41755299/6f1cea17-c823-405f-b56b-fb6b61758521)
 
 
