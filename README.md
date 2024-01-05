@@ -216,3 +216,9 @@ Update your Z offset
 * Label Objects
 * Exclude Objects
 
+### Troubleshooting Notes
+There are two errors you may see in your console when starting a print:
+1. Unknown command:"SAVE_LAST_FILE"
+2. Error evaluating 'gcode_macro PRINT_START:gcode': jinja2.exceptions.UndefinedError: 'dict object' has no attribute 'BED'
+These are caused by the non-standard version of klipperscreen that comes built into the T500, and makes calls to incorrectly labeled markers. **Thankfully, they don't actually impede the printing, so you can ignore them!** You can resolve this by installing the standard version of KlipperScreen using [KIAUH](https://github.com/dw-0/kiauh), which comes built into the T500
+
