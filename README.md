@@ -24,6 +24,7 @@ The guide below will cover the full T500 conversion; you may be able to deviate 
 * A few extra parts you will need:
   * 4x M3 5x4mm heat set inserts (same ones that VORONs use)
   * 8x M4x40mmm Socket Heat Cap Screws (Or whatever style M4x40mm screws you would like, SHCS's are just the easiest to tighten during the build)
+  * A small length of PTFE tubing for the Stealthburner hotend mount
 
 ## Things to Print
 **THESE MUST ALL BE PRINTED FROM ABS OR ASA. THEY ARE DESIGNED FOR ABS. OTHER MATERIALS ARE NOT SUITABLE EITHER DUE TO THEIR TEMPERATURE RESISTANCE OR STRUCTURE CREEP OVER TIME; YOU HAVE BEEN WARNED**
