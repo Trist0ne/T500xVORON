@@ -3,6 +3,15 @@ A Comgrow T500 Rework to install an RC8 Voron Stealthburner, complete with Chaot
 
 The guide below will cover the full T500 conversion; you may be able to deviate if you just want parts of it (for example; enabling sensorless homing on your stock T500) or you want to use different components (such as a different toolhead board, different CANBUS adapter, or not using CANBUS at all), but you're on your own if you do so.
 
+## Why would I want this?
+* VORON TAP is far more accurate than the stock inductive Z probe, and is not prone to thermal drift. 
+* TAP allows for automatic Z offset, every print, regardless of print surface. "Always perfect first layers"!
+* The LED's on the hotend can show the current printer status, change as the printer heats up to visually show temperature, and illuminate the nozzle while printing. 
+* The VORON Stealthburner allows you to use more ~off-the-shelf~ components that are easy to obtain, since it's difficult to get replacements for Comgrow proprietary parts.
+* The modular design allows you to change out hotends easily, or use different hotend styles than the stock one.
+* Simplified wiring with CANBUS cuts the amount of wires running to the toolhead down to just one unified cable.
+* It just damn **looks** cooler
+
 ## TABLE OF CONTENTS
 ### [THINGS TO BUY](https://github.com/Trist0ne/T500xVORON/blob/main/README.md#things-to-buy)
 ### [THINGS TO PRINT](https://github.com/Trist0ne/T500xVORON/blob/main/README.md#things-to-print)
