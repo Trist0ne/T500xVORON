@@ -62,26 +62,27 @@ You can do the following sections in any order, they are just listed in the orde
 ### Mounting the Toolhead
 1. Start by inserting {4x} M3 5x4mm heat set inserts into the adapter plate. Take care to ensure they are perfectly level with the surface of the plastic.
 ![image](https://github.com/Trist0ne/T500xVORON/assets/41755299/1799de0e-7ea4-4598-afaf-f19714c63125)
+(Ignore the very bottom two holes in the picture; they didn't make it into the final design)
 
 
-2. Unclip the stock toolhead umbilical and drag chain mount, and move them out of the way. Unmount the stock T500 toolhead and drag chain plate. There are 4 screws around the outside of the plastic casing (keep these!), several screws holding the drag chain plate to the rail. You should be left with a metal rectangular sliding rail.
+3. Unclip the stock toolhead umbilical and drag chain mount, and move them out of the way. Unmount the stock T500 toolhead and drag chain plate. There are 4 screws around the outside of the plastic casing (keep these!), several screws holding the drag chain plate to the rail. You should be left with a metal rectangular sliding rail.
 ![image](https://github.com/Trist0ne/T500xVORON/assets/41755299/e83a2e70-2edc-46f8-97bc-da69bf9ecbf4)
 
 
-3. Using the 4 casing screws from the stock toolhead, attach the Adapter Plate to the rectangular sliding rail. Check to ensure the rail still slides back and forth. 
+4. Using the 4 casing screws from the stock toolhead, attach the Adapter Plate to the rectangular sliding rail. Check to ensure the rail still slides back and forth. 
 ![image](https://github.com/Trist0ne/T500xVORON/assets/41755299/f67d71d7-87a8-44ed-b62f-64451ad39fc4)
 
 
-4. Attach the ChaoticLabs CNC TAP to the Adapter Plate
+5. Attach the ChaoticLabs CNC TAP to the Adapter Plate
    * The attachment process is the same as the one located in the [CNC TAP build guide](https://github.com/Chaoticlab/CNC-Tap-for-Voron/blob/master/Manual/CNC_Voron_Tap_V2_Build_Guide_20231013.pdf)
 
-5. Attach the Stealthburner assembly to the CNC TAP. Check to make sure the whole assembly can slide up and down (the 'TAP' function)
+6. Attach the Stealthburner assembly to the CNC TAP. Check to make sure the whole assembly can slide up and down (the 'TAP' function)
    * The attachment process for the Stealthburner is the same as the one located in the [CNC TAP build guide](https://github.com/Chaoticlab/CNC-Tap-for-Voron/blob/master/Manual/CNC_Voron_Tap_V2_Build_Guide_20231013.pdf)
    * Ensure you attach the cable bridge shown at the end of the build guide. We will not use the steel wire, but the bridge will provide strain relief and stability to the CANBUS cable port.
 ![image](https://github.com/Trist0ne/T500xVORON/assets/41755299/4ad1ae06-10eb-4e5d-9737-56c6c2a6584a)
 
  
-6. Check clearences, and appreciate how nice the Stealthburner looks mounted on the T500
+7. Check clearences, and appreciate how nice the Stealthburner looks mounted on the T500
 
 ### Raising the Bed
 The stock T500 gantry and bed are mounted in such a way that the gantry cannot drop low enough to touch the nozzle to the bed. Obviously, this is problematic. Because of the way the gantry is designed, there is no easy way to gracefully drop the toolhead low enough; thus, we have to go the other direction and raise the bed!
