@@ -173,7 +173,7 @@ When you're 100% sure everything is lined up, plug your printer in and flip the 
 2. Access your printers web-ui. In the machine tab, delete ALL the config files.
 3. Download the Klipper Configurations folder from this Github ([here](https://github.com/Trist0ne/T500xVORON/tree/main/Klipper%20Configurations)), and upload them ALL to the printer's config section.
 * ![image](https://github.com/Trist0ne/T500xVORON/assets/41755299/258b8037-95a2-4bea-b8ea-d8ef3a9e6b04)
-3. Configure the annotated sections of **toolboard.cfg** and **u2c.cfg**. You will need to fill in the canbus_uuid sections to to tell your printer the CAN addresses of your U2C and SB2209
+3. Configure the annotated sections of **printer.cfg**, **toolboard.cfg**, and **u2c.cfg**. You will need to fill in the canbus_uuid sections to to tell your printer the CAN addresses of your U2C and SB2209, as well as configuring your sensorless homing (info below)
 4. Save and click 'firmware restart'; resolve any errors that Klipper may throw, if any (the error message will tell you what the configuration issue is).
 
 #### Z Endstop Check
@@ -181,11 +181,12 @@ When you're 100% sure everything is lined up, plug your printer in and flip the 
 1. Once Klipper has successfully loaded and can interface with the U2C and SB2209, navigate to the machine page of the web UI and press 'sync endstops'
 2. Endstop Z should be 'OPEN'
 3. By hand, move the toolhead up to the top of it's travel to trigger the CNC TAP sensor. Hold it in place and click the 'sync enstops' button. Endstop Z should now be marked as 'CLOSED'
+4. Additionally, there should be a blue light on the rear of the TAP sensor that turns red when triggered. If this doesn't happen, you've either wired the sensor wrong or it is faulty.
 
 #### Sensorless Homing Configuration
 **DO THIS BEFORE ATTEMPTING TO HOME THE PRINTER**
 1. Follow the guide located [here](https://docs.vorondesign.com/community/howto/clee/sensorless_xy_homing.html) to calibrate the sensorless homing.
-* The default configurations are made to work with sensorless homing, and are largely preconfigured. You can start from "Finding the right StallGuard threshold". You do not need to add sensorless homing macros, I built them in.
+* The default configurations are made to work with sensorless homing, and are largely preconfigured. You can start from "Finding the right StallGuard threshold". You do not need to add sensorless homing macros, I built them in. Ensure that your sensitivity numbers are high enough that you do not damage the printer, but low enough that the machine is consistently able to home itself.
 
 #### Z Offset Configuration
 Update your Z offset
@@ -199,12 +200,11 @@ Update your Z offset
 5. Configure Input Shaping on both X and Y
 * You can reference [this guide](https://www.klipper3d.org/Measuring_Resonances.html#bed-slinger-printers) for help
 * Your X axis now has a built in accelerometer. You will still need to plug in the included accelerometer and mount it on the Y axis, the same way you would do on the stock T500.
-* I use the SHAPER_CALIBRATE macro for automatic calibration
+* I use the SHAPER_CALIBRATE macro for automatic calibration. It will measure both X and Y sequentially and apply the best settings automatically. 
 
 6. Retune your Pressure Advance
-* Follow [this guide](https://github.com/SoftFever/OrcaSlicer/wiki/Calibration) from the Orca Slicer wiki
-
-7. Pat yourself on the back for a job well done!
+* Follow [this guide](https://github.com/SoftFever/OrcaSlicer/wiki/Calibration) from the Orca Slicer wiki. You shold set this number in the Orca Slicer filament profile settings, rather than setting it in the Klipper configs. It will be different for every filament and between brands. 
+7. Pat yourself on the back for a job well done! Edit your slicer settings as shown below, and then do a test print!
 
 ### Slicer Configuration
 1. Edit your printer settings "Machine G-code" tab as follows:
