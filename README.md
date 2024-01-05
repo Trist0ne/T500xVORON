@@ -23,6 +23,7 @@ The guide below will cover the full T500 conversion; you may be able to deviate 
 #### [> WIRING WIRING WIRING](https://github.com/Trist0ne/T500xVORON/blob/main/README.md#wiring-wiring-wiring)
 #### [> SOFTWARE CONFIGURATION](https://github.com/Trist0ne/T500xVORON/blob/main/README.md#software-configuration)
 #### [> SLICER CONFIGURATION](https://github.com/Trist0ne/T500xVORON/blob/main/README.md#slicer-configuration)
+#### [> TROUBLESHOOTING NOTES](https://github.com/Trist0ne/T500xVORON/blob/main/README.md#troubleshooting-notes)
 
 
 ## Things to Buy
