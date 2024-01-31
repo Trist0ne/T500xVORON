@@ -33,6 +33,7 @@ The guide below will cover the full T500 conversion; you may be able to deviate 
 * [BTT SB 2209 RP2040](https://biqu.equipment/products/bigtreetech-ebb-sb2209-can-v1-0?variant=40377392431202). This is the toolhead control board. You should get the 2209 **RP2040** variant.
 * [Everything from Fasteners & Electronics section of the BOM of the latest VORON Stealthburner](https://vorondesign.com/voron_stealthburner). Do not cheap out on the BMG extruder kit!
 * [A Stealthburner compatible Hotend of your choosing](https://us.store.bambulab.com/products/complete-hotend-assembly-x1-series). I use the Bambu Labs hardened steel hotend assembly, but any stealthburner compatible hotend will work.
+  * If you use a Bambu Labs hotend, [this](https://www.printables.com/model/322091-voron-stealthburner-printhead-for-bambu-x1cx1-hote) adapter for the StealthBurner works well!
 * A few extra parts you will need:
   * 4x M3 5x4mm heat set inserts (same ones that VORONs use)
   * 8x M4x40mmm Socket Heat Cap Screws (Or whatever style M4x40mm screws you would like, SHCS's are just the easiest to tighten during the build)
